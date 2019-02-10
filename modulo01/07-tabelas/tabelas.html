@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head lang="pt=br">
+
+        <meta charset="utf-8">
+    </head>
+
+    <style>
+        table, th, td {border: 1px solid #000;}
+        th, td {padding: 7px}
+
+        .nome {background-color: red}
+        .email {background-color: green}
+        .telefone {background-color: yellow}
+        .cargo {background-color: blue}
+    </style>
+
+    <body>
+        
+        <h1>Tabelas</h1>
+        <table>
+            <caption>Cadastro de clientes</caption>
+        
+            <colgroup>
+                <col class="nome">
+                <col class="email">
+                <col class="telefone">
+                <col class="cargo">
+            </colgroup>
+
+            <!--Representa uma linha-->
+            <thead>
+                <tr>
+                    <th>Nome:</th>
+                    <th>Email:</th>
+                    <th>Telefone:</th>
+                    <th>Cargo:</th>
+                </tr>
+            </thead>
+
+            <!--<th> = usada para títulos
+                <td> = usada para conteúdos-->
+            <tbody>
+                <tr>
+                    <td>Paula</td>
+                    <td>paula@email.com</td>
+                    <td>1111-1111</td>
+                    <td rowspan="2">Desenvolvedor Web</td>
+                </tr>
+                
+                <tr>
+                    <td>Lucas</td>
+                    <td>lucas@email.com</td>
+                    <td>1111-1111</td>
+                </tr>
+            </tbody>
+              
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

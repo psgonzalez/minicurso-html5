@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <form action="cadastro.php" method="POST">
+            
+            <fieldset>
+                <legend>Informações pessoais</legend>
+
+                <!--required = campo obrigatório
+                    autofocus = página abre e o campo já está em foco
+                    disabled = campo desabilitado
+                    maxlength = máximo de caracteres
+                    checked = define como padrão (checkbox e radio)
+                    autocomplete = campo dá sugestões salvas-->
+                Nome:<br>
+                <input type="text" name="nome" required><br>
+                
+                Senha:<br>
+                <input type="password" name="senha"><br>
+
+                Email: <br>
+                <input type="email" name="email" placeholder="seuemail@email.com"><br>
+
+                Time: <br>
+                <input type="radio" name="time" value="Santos">Santos<br>
+                <input type="radio" name="time" value="Palmeiras">Palmeiras<br>
+                <input type="radio" name="time" value="Corinthians">Corinthians<br>
+
+                Cores: <br>
+                <input type="checkbox" name="cores" value="Verde">Verde <br>
+                <input type="checkbox" name="cores" value="Azul">Azul <br>
+                <input type="checkbox" name="cores" value="Preto">Preto <br>
+
+                Quantidade: <br>
+                <input type="number" name="quantidade" min="0" max="500"><br>
+                <input type="range" name="quantidade" min="0" max="500"><br>
+
+                Mensagem: <br>
+                <textarea name="mensagem" cols="30" rows="5"></textarea><br>
+                <button type="button"> Clique </button><br><br>
+
+                Veículos: <br>
+                <select name="veiculo">
+
+                    <optgroup label="Carros">
+                        <option value="camaro">Camaro</option>
+                        <option value="hilux">Hilux</option>
+                    </optgroup>
+
+                </select><br><br>
+
+                Cor: <br>
+                <input type="color" name="cor"><br>
+
+                Imagem: <br>
+                <input type="file" name="imagem"><br>
+
+                URL: <br>
+                <input type="url" name="site"><br>
+
+                Search: <br>
+                <input type="search" name="search"><br>
+                
+                <input type="submit" name="btn-enviar" value="Enviar">
+            </fieldset>
+        </form>
+    </body>
+</html>
